@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switcher Template</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
+ <header class="header">
+  </header>
+
+
+      <section class="section" id="projects">
+        <div class="container" class="project-section active">
+          <div class="switcher">
+            <a
+              href="index.html"
+              onclick="showInactive(); return false;"
+              class="switch switch--green"
+              class="green"
+              >Active</a
+            >
+            <a
+              href="pages/projects.html"
+              onclick="showActive(); return false;"
+              class="switch switch--red";
+              class="red"
+              >No Active</a
+            >
+          </div>
+
+          <div id="active-projects" class="cards">
+            <div class="card">
+              <h1>exhum0</h1>
+              <p>Boom Bap and Old School Hip Hop in 90s style.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <script src="js/switcher.js"></script>
+  </body>
+  <footer>
+  </footer>
+</html>

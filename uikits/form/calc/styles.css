@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.advanced-buttons, .buttons {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.advanced-buttons {
+  grid-template-columns: repeat(5, 1fr); /* Инженерные кнопки: 5 колонок */
+}
+
+.buttons {
+  grid-template-columns: repeat(4, 1fr); /* Основные кнопки: 4 колонки */
+}
+
+button {
+  height: 60px;
+  font-size: 1.2rem;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+button.clear {
+  grid-column: span 4; /* Кнопка очистки занимает всю строку */
+  background: #ff4d4d;
+  color: white;
+}

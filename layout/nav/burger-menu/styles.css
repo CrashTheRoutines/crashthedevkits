@@ -1,0 +1,210 @@
+@import "nav.css";
+@import "cards.css";
+@import "gallery.css";
+@import "footer.css";
+@import "form.css";
+@import "contacts.css";
+@import "mobile.css";
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2, h3 {
+  color: #000000;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.workflow,
+.advantages,
+.products {
+  padding: 96px clamp(20px, 5vw, 120px);
+  margin: 0 auto;
+  
+  width: 100%;
+  max-width: 1440px;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+.workflow {
+  background: #F5F5F5;  
+}
+
+.advantages {
+  background: #F5F5F5;
+  margin: 0 auto;
+}
+
+.contacts {
+  margin-top: 120px;
+}
+
+.footer {
+  height: 319px;
+}
+
+.title {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.title--black {
+  color: #000000;
+}
+
+.title--white {
+  color: #F5F5F5;
+  font-size: 72px;
+}
+
+.title--w878 {
+  width: 878px;
+}
+
+.title--w294 {
+  width: 294px;
+}
+
+.title--w361 {
+  width: 361px;
+}
+
+.title--w700 {
+  width: 1200px;
+  height: 95px;
+}
+
+.title--w462 {
+  width: 462px;
+  height: 222px;
+}
+
+.title--w51 {
+  width: 51px;
+  height: 22px;
+}
+
+.title--w244 {
+  width: 244px;
+  height: 22px;
+  font-size: 18px;
+
+  color: #000000;
+}
+
+.title--344 {
+  width: 344px;
+  height: 44px;
+  font-size: 18px;
+
+  color: #000000;
+}
+
+.title--center,
+.subtitle-center {
+  text-align: center;
+}
+
+.subtitle {
+  height: auto;
+
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  font-size: 24px;
+}
+
+.subtitle--white {
+  color: #FFFFFF;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.subtitle--black {
+  color: #000000;
+}
+
+.subtitle--w1196 {
+  width: 1196px;
+}
+
+.subtitle--w473 {
+  width: 473px;
+}
+
+.subtitle--w539 {
+  width: 539px;
+}
+
+.subtitle--w1200 {
+  width: 1200px;
+}
+
+.subtitle--w337 {
+  width: 259px;
+}
+
+.subtitle--w259, .subtitle--w337 {
+  width: 259px;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  color: #000000;
+}
+
+.company--info p {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 16px;
+  
+  font-weight: 400;
+  font-size: 16px;
+}
