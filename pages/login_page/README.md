@@ -1,1 +1,1 @@
-![Текст описания](https://www.example.com/image.jpg)
+![login page](img/login.jpg)

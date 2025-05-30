@@ -1,1 +1,1 @@
-![Текст описания](https://www.example.com/image.jpg)
+![dashboard](img/dashboard.jpg)

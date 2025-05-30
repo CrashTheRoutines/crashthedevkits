@@ -1,1 +1,2 @@
-![Текст описания](https://www.example.com/image.jpg)
+![switch](img/switch1.jpg)
+![switch](img/switch2.jpg)

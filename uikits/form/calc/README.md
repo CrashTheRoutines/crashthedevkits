@@ -1,1 +1,1 @@
-![Текст описания](https://www.example.com/image.jpg)
+![calc](img/calc.jpg)
