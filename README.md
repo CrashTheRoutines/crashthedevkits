@@ -1,13 +1,9 @@
-# Библиотека готовых шаблонов страниц, блоков и uikits для разработки веб сайтов и приложений
+# Library of ready-made templates of pages, blocks and uikits for developing web sites and applications
 
-Данная Библиотека собирается лично мной из тех проектов, что я делаю и распространяется свободно.
+This Library is collected by me personally from the projects that I do and is distributed freely.
 
-## Что входит в данный репозиторий?
+## What is included in this repository?
 
-- **UIKits** - это различные кнопки, формы и прочие элементы интерфейса
-- **Layout** - данный раздел содержит основные блоки страницы (навигация, футер итд)
-- **Pages** - это раздел с готовыми шаблонами страниц, в частности шаблоны для index.html и markdown
-
-## Послесловие
-
-Данный репозиторий будет дополняться и будет переведен на английский и испанский язык.
+- **UIKits** - these are various buttons, forms and other interface elements
+- **Layout** - this section contains the main blocks of the page (navigation, footer, etc.)
+- **Pages** - this is a section with ready-made page templates, in particular templates for index.html and markdown
