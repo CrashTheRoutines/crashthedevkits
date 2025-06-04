@@ -1,0 +1,50 @@
+.form-block {
+  background: #f5f5f5;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 480px;
+  width: 100%;
+  margin-left: 832px;
+}
+
+.form-container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.form-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.last_field {
+  margin-bottom: 24px;
+}
+
+.form_btn {
+  width: 496px;
+  height: 52px;
+  
+  background: #DB7125;
+  border-radius: 8px;
+}

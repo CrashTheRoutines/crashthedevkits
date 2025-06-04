@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Hunter</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="styles/popup.css">
+  <link rel="stylesheet" href="styles/gallery_modal.css">
+  <script src="../Sweet Hunter/scripts.js"></script>
+
+  <style>
+    /* Стили для всплывающего окна */
+    #popup {
+        display: none; /* Скрыть окно по умолчанию */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 2px solid #000;
+        z-index: 1000;
+    }
+    #overlay {
+        display: none; /* Скрыть оверлей */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    button {
+        margin: 10px;
+    }
+</style>
+
+</head>
+<body>
+
+  <div id="overlay"></div>
+
+    <!-- Всплывающее окно 
+    <div id="popup">
+        <h2>Вам исполнилось 18 лет?</h2>
+        <button id="yesBtn">Да</button>
+        <button id="noBtn">Нет</button>
+    </div>-->
+
+    <!--<script>
+        // Ожидаем загрузки DOM
+        document.addEventListener("DOMContentLoaded", function() {
+            // Показать окно
+            let overlay = document.getElementById('overlay');
+            let popup = document.getElementById('popup');
+            
+            // Функция для показа окна
+            function showPopup() {
+                overlay.style.display = 'block';
+                popup.style.display = 'block';
+            }
+
+            // Показать окно сразу после загрузки
+            showPopup();
+
+            // Кнопки внутри окна
+            let yesButton = document.getElementById('yesBtn');
+            let noButton = document.getElementById('noBtn');
+
+            // Закрыть окно
+            yesButton.addEventListener('click', function() {
+                alert("Доступ разрешен!");
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            });
+
+            noButton.addEventListener('click', function() {
+                alert("Доступ запрещен!");
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            });
+
+            // Закрыть окно при клике на оверлей
+            overlay.addEventListener('click', function() {
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            });
+        });
+    </script>-->
+
+  <!-- Верхнее меню -->
+  <header class="header">
+    <h1>SWEET HUNTER</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="../Sweet Hunter/index.html">Главная</a></li>
+        <li><a href="../Sweet Hunter/pages/photo.html">Фото</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Левый сайдбар -->
+    <aside class="sidebar">
+      <h2>Категории</h2>
+      <ul class="categories">
+        <li><a href="#">Категория 1</a></li>
+        <li><a href="#">Категория 2</a></li>
+        <li><a href="#">Категория 3</a></li>
+        <li><a href="#">Категория 4</a></li>
+        <li><a href="#">Категория 5</a></li>
+      </ul>
+    </aside>
+
+    <!-- Контент (видеогалерея) -->
+    <main class="content">
+      <div class="gallery">
+
+<div class="video-thumb" data-src="video/video_1.mp4">
+  <canvas class="video-preview"width="300" height="180"></canvas>
+</div>
+
+        <div class="video-thumb" data-src="video/video_2.mp4">
+  <canvas class="video-preview"width="300" height="180"></canvas>
+</div>
+
+        <div class="video-thumb" data-src="video/video_3.mp4">
+  <canvas class="video-preview" width="300" height="180"></canvas>
+</div>
+
+
+<!-- Работает -->
+        <div class="video-item">
+          <video src="video/video_1.mp4" class="video" preload="metadata"></video>
+          <a href="video/video_1.mp4" class="video-title">Видео 1</a>
+          <span class="video-duration"></span>
+        </div>
+        <div class="video-item">
+          <video src="video/video_2.mp4" class="video" preload="metadata"></video>
+          <a href="video/video_2.mp4" class="video-title">Видео 2</a>
+          <span class="video-duration"></span>
+        </div>
+        <div class="video-item">
+          <video src="video/video_3.mp4" class="video" preload="metadata"></video>
+          <a href="video/video_3.mp4" class="video-title">Видео 3</a>
+          <span class="video-duration"></span>
+        </div>
+        <div class="video-item">
+          <video src="video2.mp4" class="video" preload="metadata"></video>
+          <a href="video2.mp4" class="video-title">Видео 4</div>
+        <div class="video-item">
+          <video src="video2.mp4" class="video" preload="metadata"></video>
+          <a href="video2.mp4" class="video-title">Видео 5</a>
+          <span class="video-duration"></span>
+        </div>
+        <div class="video-item">
+          <video src="video1.mp4" class="video" preload="metadata"></video>
+          <a href="video1.mp4" class="video-title">Видео 6</a>
+          <span class="video-duration"></span>
+        </div>
+        <div class="video-item">
+          <video src="video2.mp4" class="video" preload="metadata"></video>
+          <a href="video2.mp4" class="video-title">Видео 7</a>
+          <span class="video-duration"></span>
+        </div>
+        <div class="video-item">
+          <video src="video2.mp4" class="video" preload="metadata"></video>
+          <a href="video2.mp4" class="video-title">Видео 8</a>
+          <span class="video-duration"></span>
+        </div>
+        <div class="video-item">
+          <video src="video2.mp4" class="video" preload="metadata"></video>
+          <a href="video2.mp4" class="video-title">Видео 9</a>
+          <span class="video-duration"></span>
+        </div>
+
+        <!-- Добавляйте больше видео -->
+      </div>
+
+  <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a class="active" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+
+  </div>
+
+  <!-- ⬇️ Модалка — прямо перед закрывающим тегом body -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <video id="modalVideo" controls autoplay></video>
+    </div>
+  </div>
+
+  <!-- Подключаем JS -->
+  <script src="script/video_popup.js"></script>
+  <script src="script/video_popup_2.js"></script>
+</body>
+</html>
