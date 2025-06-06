@@ -1,0 +1,20 @@
+$breakpoints: (
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+
+@mixin respond($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+.title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+
+  @include respond(md) {
+    text-align: center;
+  }
+}

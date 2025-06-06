@@ -1,0 +1,8 @@
+.title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+}
