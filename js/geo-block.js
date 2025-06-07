@@ -36,3 +36,11 @@
     window.location.href = "404.html";
   }
 })();
+
+// Blocked Countries
+
+const blockedCountries = ["ru", "cn", "ir", "kp"];
+
+if (blockedCountries.includes(country)) {
+  window.location.href = "/404.html";
+}

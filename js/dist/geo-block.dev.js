@@ -2,7 +2,8 @@
 
 // For RU
 (function _callee() {
-  var res, data, country, allowedCountries;
+  var res, data, _country, allowedCountries;
+
   return regeneratorRuntime.async(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -18,10 +19,10 @@
 
         case 6:
           data = _context.sent;
-          country = data.country.toLowerCase();
+          _country = data.country.toLowerCase();
           allowedCountries = ["ru"];
 
-          if (!allowedCountries.includes(country)) {
+          if (!allowedCountries.includes(_country)) {
             window.location.href = "404.html";
           }
 
@@ -43,7 +44,8 @@
 
 
 (function _callee2() {
-  var res, data, country, allowedCountries;
+  var res, data, _country2, allowedCountries;
+
   return regeneratorRuntime.async(function _callee2$(_context2) {
     while (1) {
       switch (_context2.prev = _context2.next) {
@@ -59,11 +61,11 @@
 
         case 6:
           data = _context2.sent;
-          country = data.country.toLowerCase(); // Список разрешённых стран для английской версии
+          _country2 = data.country.toLowerCase(); // Список разрешённых стран для английской версии
 
           allowedCountries = ["us", "gb", "ca", "au", "de"];
 
-          if (!allowedCountries.includes(country)) {
+          if (!allowedCountries.includes(_country2)) {
             // Страна не подходит — редиректим на 404
             window.location.href = "404.html";
           }
@@ -83,4 +85,11 @@
       }
     }
   }, null, null, [[0, 12]]);
-})();
+})(); // Blocked Countries
+
+
+var blockedCountries = ["ru", "cn", "ir", "kp"];
+
+if (blockedCountries.includes(country)) {
+  window.location.href = "/404.html";
+}
