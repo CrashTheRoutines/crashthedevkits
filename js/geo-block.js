@@ -44,3 +44,13 @@ const blockedCountries = ["ru", "cn", "ir", "kp"];
 if (blockedCountries.includes(country)) {
   window.location.href = "/404.html";
 }
+
+// Allowed Countries
+
+const allowedCountries = [
+  "us", "ca", "gb", "au", "nz", 
+  "fr", "de", "it", "es", "pt", 
+  "nl", "be", "ch", "at",       
+  "se", "no", "fi", "dk",       
+  "ie", "lu"                  
+];
