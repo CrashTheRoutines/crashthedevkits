@@ -59,3 +59,8 @@
 .footer a:hover {
   text-decoration: underline; /* можно добавить эффект при наведении */
 }
+
+textarea {
+  width: 600px;
+  height: 600px;
+}
