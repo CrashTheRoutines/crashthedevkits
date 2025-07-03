@@ -1,0 +1,51 @@
+/*
+Theme Name: Luxury Car Detailing
+Theme URI: https://example.com/luxury-theme
+Author: Adam Lean
+Author URI: https://example.com
+Description: A luxury car detailing landing page WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: luxurycar
+Tags: luxury, car, detailing, landing-page
+*/
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100vw;
+  min-height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: black;
+  color: white;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+}
